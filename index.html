@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+
+    <div class="mt-4 d-flex justify-content-between align-items-center m-3 p-3">
+        <h1>My Learning Dashboard <span class="text-muted small d-block" style="font-size: 15px;">Semester 3 . Web
+                Development Batch</span></h1>
+        <button class="btn btn-primary">+ Add Course</button>
+
+    </div>
+
+    <!-- alert -->
+
+    <div class="alert alert-warning m-4">
+        <p><b>Heads up!</b> Assignment 4(bootstrap Forms) is due this Friday. Don't leave it for the last day.</p>
+    </div>
+
+    <!-- grid -->
+    <div class="row m-3 g-4 text-center">
+        <div class="col-md-4 ">
+            <div class="card py-3">
+                <h4 class="text-primary"><b>6</b></h4>
+                <span class="text-muted">Courses Enrolled</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card py-3">
+                <h4 class="text-success"><b>18</b></h4>
+                <span class="text-muted">Assignments Completed</span>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card py-3">
+                <h4 class="text-danger"><b>3</b></h4>
+                <span class="text-muted">Pending tasks</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Course progress -->
+
+    <div class="row m-3 g-4">
+        <div class="col-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5>Course Progress</h5>
+                    <span class="badge bg-primary py-2 border rounded-pill">This month</span>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between" style="font-size: 15px;">
+                        <p>HTML & CSS</p>
+                        <span>100%</span>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-success" style="width:100%;">100%</div>
+                    </div>
+                    <div class="d-flex justify-content-between" style="font-size: 15px;">
+                        <p>JavaScript Basics</p>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-primary" style="width:75%;">75%</div>
+                    </div>
+                    <div class="d-flex justify-content-between" style="font-size: 15px;">
+                        <p>Bootstrap 5</p>
+                        <span>55%</span>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-info" style="width:55%;">55%</div>
+                    </div>
+                    <div class="d-flex justify-content-between" style="font-size: 15px;">
+                        <p>PHP & MySQL</p>
+                        <span>30%</span>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-warning" style="width:30%;">30%</div>
+                    </div>
+                    <div class="d-flex justify-content-between" style="font-size: 15px;">
+                        <p>React intro</p>
+                        <span>10%</span>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar bg-danger" style="width:10%;">10%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header d-flex">
+                    <h5>Quick Links</h5>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        <li class="list-group-item active">Dashboard</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Assignments
+                            <span class="badge bg-danger rounded-pill">3</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">Messages
+                            <span class="badge bg-primary rounded-pill">12</span>
+                        </li>
+                        <li class="list-group-item ">Certificates
+                        </li>
+                        <li class="list-group-item disabled" style="background-color: rgb(238, 238, 238);">Live
+                            Classes(Locked)</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- upcoming tasks -->
+
+
+    <div class="row m-3 g-4">
+
+        <div class="col-4">
+            <div class="card">
+                <div class="list-group">
+                    <li class="list-group-item fw-bold">
+                        Upcoming Tasks
+
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Bootstrap Forms
+                        <span class="badge bg-danger rounded-pill">Due fri</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">JS Quiz 3
+                        <span class="badge bg-warning rounded-pill">Mon</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Portfolio Page
+                        <span class="badge bg-info rounded-pill">Next wk</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Git practice
+                        <span class="badge bg-success rounded-pill">Done</span>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-8">
+            <div class="list-group">
+                <li class="list-group-item fw-bold d-flex justify-content-between align-items-center">
+                    Class Leaderboard
+                    <span class="text-muted " style="font-size: 12px;">Top 4 this week</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="badge rounded-circle p-3" style="background-color: rgb(167, 46, 167);">AN</span>
+                        </div>
+                        <div class="col">
+                            <span>
+                                Anjana N.
+                                <small class="d-block text-muted">Completed 9 tasks</small>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="badge bg-success rounded-pill">98%</span>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="badge rounded-circle p-3" style="background-color: rgb(228, 159, 69);">RS</span>
+                        </div>
+                        <div class="col">
+                            <span>
+                                Rahul S.
+                                <small class="d-block text-muted">Completed 8 tasks</small>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="badge bg-success rounded-pill">92%</span>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="badge rounded-circle p-3" style="background-color: rgb(76, 202, 141);">FM</span>
+                        </div>
+                        <div class="col">
+                            <span>
+                                Fathima M.
+                                <small class="d-block text-muted">Completed 7 tasks</small>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="badge bg-warning rounded-pill">85%</span>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="badge rounded-circle p-3" style="background-color: rgb(233, 29, 169);">JK</span>
+                        </div>
+                        <div class="col">
+                            <span>
+                                Joel K.
+                                <small class="d-block text-muted">Completed 5 tasks</small>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="badge bg-warning rounded-pill">71%</span>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+</body>
+
+</html>
